@@ -1,555 +1,427 @@
-2019-06-25 09:39:29.734 INFO  (main) [   ] o.e.j.u.log Logging initialized @2391ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-06-25 09:39:30.049 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-06-25 09:39:30.065 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_121-b13
-2019-06-25 09:39:30.112 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///E:/Software/Solr/solr-8.1.1/server/contexts/] at interval 0
-2019-06-25 09:39:31.005 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-06-25 09:39:31.021 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-06-25 09:39:31.021 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-06-25 09:39:31.021 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2019-06-25 09:39:31.130 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-06-25 09:39:31.146 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.1.1
-2019-06-25 09:39:31.146 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-06-25 09:39:31.146 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: E:\Software\Solr\solr-8.1.1
-2019-06-25 09:39:31.146 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-06-25T09:39:31.146Z
-2019-06-25 09:39:31.177 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: E:\Software\Solr\solr-8.1.1\server\solr
-2019-06-25 09:39:31.193 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from E:\Software\Solr\solr-8.1.1\server\solr\solr.xml
-2019-06-25 09:39:31.340 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
-2019-06-25 09:39:31.876 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-06-25 09:39:32.496 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@22875539[provider=null,keyStore=null,trustStore=null]
-2019-06-25 09:39:32.688 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@52d239ba[provider=null,keyStore=null,trustStore=null]
-2019-06-25 09:39:32.997 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-06-25 09:39:32.997 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-06-25 09:39:33.107 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-25 09:39:33.107 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-25 09:39:33.122 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-25 09:39:33.216 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath E:\Software\Solr\solr-8.1.1\server\solr
-2019-06-25 09:39:33.216 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [sinhalaNews, techproducts]
-2019-06-25 09:39:33.372 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrResourceLoader [sinhalaNews] Added 63 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
-2019-06-25 09:39:33.403 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrResourceLoader [techproducts] Added 61 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
-2019-06-25 09:39:33.717 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
-2019-06-25 09:39:33.732 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
-2019-06-25 09:39:33.811 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2019-06-25 09:39:34.113 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchemaFactory The schema is configured as managed, but managed schema resource managed-schema not found - loading non-managed schema schema.xml instead
-2019-06-25 09:39:34.207 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.IndexSchema [techproducts] Schema name=example
-2019-06-25 09:39:34.238 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.IndexSchema [sinhalaNews] Schema name=default-config
-2019-06-25 09:39:34.582 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@649bec2e{/solr,file:///E:/Software/Solr/solr-8.1.1/server/solr-webapp/webapp/,AVAILABLE}{E:\Software\Solr\solr-8.1.1\server/solr-webapp/webapp}
-2019-06-25 09:39:34.612 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5398edd0{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-06-25 09:39:34.613 INFO  (main) [   ] o.e.j.s.Server Started @7274ms
-2019-06-25 09:39:35.281 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-06-25 09:39:35.297 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
-2019-06-25 09:39:35.297 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
-2019-06-25 09:39:35.297 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2019-06-25 09:39:35.297 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2019-06-25 09:39:35.313 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
-2019-06-25 09:39:35.313 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2019-06-25 09:39:35.313 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2019-06-25 09:39:35.313 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2019-06-25 09:39:35.328 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2019-06-25 09:39:35.453 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
-2019-06-25 09:39:35.469 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts, trusted=true
-2019-06-25 09:39:35.516 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-25 09:39:35.531 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\data\]
-2019-06-25 09:39:35.547 WARN  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchemaFactory Can't rename E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\schema.xml to E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\schema.xml.bak - PLEASE REMOVE THIS FILE.
-2019-06-25 09:39:35.547 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.CoreContainer Creating SolrCore 'sinhalaNews' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews, trusted=true
-2019-06-25 09:39:35.547 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.sinhalaNews' (registry 'solr.core.sinhalaNews') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-25 09:39:35.547 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrCore [[sinhalaNews] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\data\]
-2019-06-25 09:39:35.616 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-06-25 09:39:35.616 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-06-25 09:39:36.540 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-06-25 09:39:36.540 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-06-25 09:39:36.540 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-06-25 09:39:36.540 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-06-25 09:39:36.586 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-06-25 09:39:36.586 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-06-25 09:39:36.602 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-06-25 09:39:36.602 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-06-25 09:39:36.900 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@741f582c[techproducts] main]
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/stopwords/english
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-25 09:39:36.931 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
-2019-06-25 09:39:36.947 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
-2019-06-25 09:39:36.947 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/synonyms/english
-2019-06-25 09:39:36.978 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-06-25 09:39:36.994 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-06-25 09:39:37.010 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2019-06-25 09:39:37.010 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.SolrIndexSearcher Opening [Searcher@325b1fdc[sinhalaNews] main]
-2019-06-25 09:39:37.010 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf
-2019-06-25 09:39:37.010 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-06-25 09:39:37.010 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-06-25 09:39:37.010 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-06-25 09:39:37.041 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-06-25 09:39:37.041 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-06-25 09:39:37.041 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf\elevate.xml
-2019-06-25 09:39:37.056 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-06-25 09:39:37.072 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@741f582c[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C32/1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560318840213}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(7.7.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560509578708}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-25 09:39:37.088 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@325b1fdc[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-25 09:39:37.088 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-25 09:39:37.088 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-06-25 09:39:37.103 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews] Registered new searcher Searcher@325b1fdc[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-25 09:39:37.193 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=3 status=0 QTime=105
-2019-06-25 09:39:37.199 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-25 09:39:37.199 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-06-25 09:39:37.199 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2019-06-25 09:39:37.199 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@741f582c[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C32/1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560318840213}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(7.7.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560509578708}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-25 09:39:37.433 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=36
-2019-06-25 09:39:44.049 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=2
-2019-06-25 09:39:44.101 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=51
-2019-06-25 09:39:44.152 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=42
-2019-06-25 09:39:47.088 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:39:47.125 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561448041400} status=0 QTime=17
-2019-06-25 09:39:47.127 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561448037254&ts=1561448037254} status=503 QTime=1
-2019-06-25 09:39:47.152 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561448041400} status=0 QTime=35
-2019-06-25 09:39:47.204 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=103
-2019-06-25 09:39:47.205 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/system params={wt=json&_=1561448041400} status=0 QTime=97
-2019-06-25 09:39:49.114 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:39:49.115 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=2
-2019-06-25 09:39:49.173 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=52
-2019-06-25 09:39:49.191 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=7
-2019-06-25 09:39:51.264 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=2
-2019-06-25 09:39:51.266 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:39:51.275 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=managed-schema&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561448383193} status=0 QTime=1
-2019-06-25 09:39:51.325 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=7
-2019-06-25 09:39:51.340 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=61
-2019-06-25 09:40:24.625 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:40:24.637 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=2
-2019-06-25 09:40:24.639 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang/stopwords_si.txt&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561448383193} status=0 QTime=0
-2019-06-25 09:40:24.685 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=51
-2019-06-25 09:40:24.697 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=7
-2019-06-25 09:40:40.182 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=2
-2019-06-25 09:40:40.183 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:40:40.186 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=managed-schema&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561448383193} status=0 QTime=0
-2019-06-25 09:40:40.243 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=6
-2019-06-25 09:40:40.254 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=53
-2019-06-25 09:41:37.611 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:41:37.636 INFO  (qtp1702940637-15) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=5
-2019-06-25 09:41:37.639 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561449044354} status=0 QTime=7
-2019-06-25 09:41:37.695 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=83
-2019-06-25 09:41:37.773 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561448041400} status=0 QTime=15
-2019-06-25 09:42:10.025 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=2
-2019-06-25 09:42:10.031 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:42:10.080 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=48
-2019-06-25 09:42:10.112 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=6
-2019-06-25 09:42:13.763 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang/stopwords_si.txt&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561448383193} status=0 QTime=0
-2019-06-25 09:42:13.764 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=2
-2019-06-25 09:42:13.781 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 09:42:13.823 INFO  (qtp1702940637-15) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=6
-2019-06-25 09:42:13.838 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=53
-2019-06-25 10:13:04.397 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=1
-2019-06-25 10:13:04.447 INFO  (qtp1702940637-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=53
-2019-06-25 10:13:16.360 ERROR (qtp1702940637-19) [   x:sinhalaNews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "title"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1242)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:427)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:827)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:772)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:846)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2566)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:756)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:502)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:745)
-
-2019-06-25 10:13:16.361 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&facet.field=title&facet=on&_=1561448045274} hits=5361 status=400 QTime=97
-2019-06-25 10:13:27.826 ERROR (qtp1702940637-42) [   x:sinhalaNews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "content"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1242)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:427)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:827)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:772)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:846)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2566)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:756)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:502)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:745)
-
-2019-06-25 10:13:27.826 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&facet.field=content&facet=on&_=1561448045274} hits=5361 status=400 QTime=1
-2019-06-25 10:13:29.271 ERROR (qtp1702940637-19) [   x:sinhalaNews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "content"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1242)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:427)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:827)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:772)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:846)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2566)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:756)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:502)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:745)
-
-2019-06-25 10:13:29.271 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&facet.field=content&facet=on&_=1561448045274} hits=5361 status=400 QTime=1
-2019-06-25 10:13:30.100 ERROR (qtp1702940637-42) [   x:sinhalaNews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "content"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1242)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:427)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:827)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:772)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:846)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2566)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:756)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:502)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:745)
-
-2019-06-25 10:13:30.100 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&facet.field=content&facet=on&_=1561448045274} hits=5361 status=400 QTime=1
-2019-06-25 10:13:54.309 ERROR (qtp1702940637-19) [   x:sinhalaNews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "content"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1242)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:427)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:827)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:772)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:846)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2566)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:756)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:502)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:745)
-
-2019-06-25 10:13:54.310 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&facet.field=content&facet=on&wt=json&_=1561448045274} hits=5361 status=400 QTime=1
-2019-06-25 11:26:48.037 ERROR (qtp1702940637-23) [   x:sinhalaNews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field content
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1311)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:448)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:524)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1083)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:806)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2566)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:756)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:502)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:745)
-
-2019-06-25 11:26:48.038 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:???????&facet.field=content&spellcheck.q=???????&spellcheck=on&facet=on&wt=json&_=1561448045274} status=400 QTime=5
-2019-06-25 11:27:17.268 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:27:17.275 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=3
-2019-06-25 11:27:17.338 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=64
-2019-06-25 11:27:17.487 INFO  (qtp1702940637-15) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=6
-2019-06-25 11:27:22.575 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=1
-2019-06-25 11:27:22.577 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=3
-2019-06-25 11:27:22.579 INFO  (qtp1702940637-15) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=solrconfig.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1561448383193} status=0 QTime=0
-2019-06-25 11:27:22.640 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=55
-2019-06-25 11:27:22.667 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=7
-2019-06-25 11:27:40.535 INFO  (qtp1702940637-15) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561448383193} status=0 QTime=2
-2019-06-25 11:27:40.537 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=schema.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1561448383193} status=0 QTime=1
-2019-06-25 11:27:40.541 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:27:40.604 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=63
-2019-06-25 11:27:40.626 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561448383193} status=0 QTime=7
-2019-06-25 11:27:55.193 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:27:55.252 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=59
-2019-06-25 11:27:56.510 INFO  (qtp1702940637-15) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&_=1561448045274} hits=5361 status=0 QTime=1
-2019-06-25 11:28:00.464 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:28:00.490 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=12
-2019-06-25 11:28:00.524 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=60
-2019-06-25 11:28:42.131 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:28:42.133 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=3
-2019-06-25 11:28:42.156 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561449044354} status=0 QTime=4
-2019-06-25 11:28:42.199 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=66
-2019-06-25 11:28:42.299 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561448041400} status=0 QTime=9
-2019-06-25 11:28:54.905 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
-2019-06-25 11:28:54.970 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561449044353} status=0 QTime=817
-2019-06-25 11:28:56.488 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=3
-2019-06-25 11:28:56.491 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561449044354} status=0 QTime=5
-2019-06-25 11:28:56.535 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561448041400} status=0 QTime=3
-2019-06-25 11:29:10.395 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
-2019-06-25 11:29:10.503 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561449044353} status=0 QTime=212
-2019-06-25 11:29:12.021 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=3
-2019-06-25 11:29:12.042 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561449044354} status=0 QTime=1
-2019-06-25 11:29:12.059 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561448041400} status=0 QTime=4
-2019-06-25 11:29:29.068 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
-2019-06-25 11:29:29.134 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561449044353} status=0 QTime=130
-2019-06-25 11:29:30.652 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561449044354} status=0 QTime=1
-2019-06-25 11:29:30.652 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=4
-2019-06-25 11:29:30.685 INFO  (qtp1702940637-15) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561448041400} status=0 QTime=3
-2019-06-25 11:30:10.461 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
-2019-06-25 11:30:10.520 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561449044353} status=0 QTime=139
-2019-06-25 11:30:12.037 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561449044354} status=0 QTime=0
-2019-06-25 11:30:12.037 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=2
-2019-06-25 11:30:12.083 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561448041400} status=0 QTime=1
-2019-06-25 11:30:33.242 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:30:33.244 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=2
-2019-06-25 11:30:33.325 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=61
-2019-06-25 11:31:22.351 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2019-06-25 11:31:22.351 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=2
-2019-06-25 11:31:22.392 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:31:22.458 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=????+??????&analysis.fieldname=date&analysis.showmatch=true&verbose_output=0&analysis.query=????+??????&wt=json&_=1561448054341} status=0 QTime=107
-2019-06-25 11:31:22.461 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=58
-2019-06-25 11:31:42.828 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:31:42.828 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561448041400} status=0 QTime=2
-2019-06-25 11:31:42.849 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=????+??????&analysis.fieldname=content&analysis.showmatch=true&verbose_output=0&analysis.query=????+??????&wt=json&_=1561448054341} status=0 QTime=7
-2019-06-25 11:31:42.884 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=58
-2019-06-25 11:31:50.611 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561448037253} status=0 QTime=0
-2019-06-25 11:31:50.663 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561448037254} status=0 QTime=51
-2019-06-25 11:32:00.156 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:????+??????&_=1561448045274} hits=769 status=0 QTime=11
-2019-06-25 11:32:51.607 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:????%2B??????&_=1561448045274} hits=881 status=0 QTime=23
-2019-06-25 11:33:04.780 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:??????????&_=1561448045274} hits=0 status=0 QTime=2
-2019-06-25 11:33:11.823 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:????+??????&_=1561448045274} hits=769 status=0 QTime=1
-2019-06-25 11:33:17.499 INFO  (qtp1702940637-42) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:????+??????&facet=on&_=1561448045274} hits=769 status=0 QTime=4
-2019-06-25 11:33:47.476 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:????+??????&spellcheck.q=content:????+??????&spellcheck=on&_=1561448045274} hits=769 status=0 QTime=0
-2019-06-25 11:34:15.396 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:????+??????&fq=title&_=1561448045274} hits=0 status=0 QTime=105
-2019-06-25 11:34:39.656 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:????+??????&df=title&_=1561448045274} hits=794 status=0 QTime=11
-2019-06-25 11:35:03.774 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=content:??????&df=title&_=1561448045274} hits=146 status=0 QTime=3
-2019-06-25 11:35:22.447 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=title:??????&df=title&_=1561448045274} hits=36 status=0 QTime=2
-2019-06-25 11:43:44.815 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@5398edd0{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-06-25 11:43:44.816 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-06-25 11:43:44.825 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=428696898
-2019-06-25 11:43:44.828 INFO  (coreCloseExecutor-20-thread-1) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews]  CLOSING SolrCore org.apache.solr.core.SolrCore@32e6d49c
-2019-06-25 11:43:44.829 INFO  (coreCloseExecutor-20-thread-1) [   x:sinhalaNews] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.sinhalaNews, tag=32e6d49c
-2019-06-25 11:43:44.829 INFO  (coreCloseExecutor-20-thread-2) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@2f69c87a
-2019-06-25 11:43:44.831 INFO  (coreCloseExecutor-20-thread-1) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@215eaf5e: rootName = null, domain = solr.core.sinhalaNews, service url = null, agent id = null] for registry solr.core.sinhalaNews / com.codahale.metrics.MetricRegistry@752beb5e
-2019-06-25 11:43:44.869 INFO  (coreCloseExecutor-20-thread-2) [   x:techproducts] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts, tag=2f69c87a
-2019-06-25 11:43:44.869 INFO  (coreCloseExecutor-20-thread-2) [   x:techproducts] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@55eebf42: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts / com.codahale.metrics.MetricRegistry@5b7bec24
-2019-06-25 11:43:44.936 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-06-25 11:43:44.936 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@76a36b71: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@1598843a
-2019-06-25 11:43:44.940 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-06-25 11:43:44.941 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@35fe2125: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4589a132
-2019-06-25 11:43:44.943 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-06-25 11:43:44.943 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@94f6bfb: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@7b953525
-2019-06-25 11:43:44.970 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@649bec2e{/solr,null,UNAVAILABLE}{E:\Software\Solr\solr-8.1.1\server/solr-webapp/webapp}
+2019-06-26 10:24:23.356 INFO  (main) [   ] o.e.j.u.log Logging initialized @2660ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-06-26 10:24:23.812 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-06-26 10:24:23.820 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_121-b13
+2019-06-26 10:24:23.848 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///E:/Software/Solr/solr-8.1.1/server/contexts/] at interval 0
+2019-06-26 10:24:24.638 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-06-26 10:24:24.654 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-06-26 10:24:24.654 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-06-26 10:24:24.654 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-06-26 10:24:24.808 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-06-26 10:24:24.814 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.1.1
+2019-06-26 10:24:24.815 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-06-26 10:24:24.815 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: E:\Software\Solr\solr-8.1.1
+2019-06-26 10:24:24.816 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-06-26T10:24:24.816Z
+2019-06-26 10:24:24.850 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: E:\Software\Solr\solr-8.1.1\server\solr
+2019-06-26 10:24:24.860 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from E:\Software\Solr\solr-8.1.1\server\solr\solr.xml
+2019-06-26 10:24:25.011 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2019-06-26 10:24:25.919 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-06-26 10:24:26.438 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@22875539[provider=null,keyStore=null,trustStore=null]
+2019-06-26 10:24:26.610 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@52d239ba[provider=null,keyStore=null,trustStore=null]
+2019-06-26 10:24:26.926 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-06-26 10:24:26.929 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-06-26 10:24:27.029 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-26 10:24:27.030 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-26 10:24:27.043 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-26 10:24:27.158 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath E:\Software\Solr\solr-8.1.1\server\solr
+2019-06-26 10:24:27.159 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [sinhalaNews, techproducts]
+2019-06-26 10:24:27.383 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrResourceLoader [sinhalaNews] Added 63 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
+2019-06-26 10:24:27.383 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrResourceLoader [techproducts] Added 61 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
+2019-06-26 10:24:27.770 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
+2019-06-26 10:24:27.777 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
+2019-06-26 10:24:27.909 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2019-06-26 10:24:28.237 WARN  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2019-06-26 10:24:28.321 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.IndexSchema [techproducts] Schema name=example
+2019-06-26 10:24:28.335 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.IndexSchema [sinhalaNews] Schema name=default-config
+2019-06-26 10:24:28.623 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@649bec2e{/solr,file:///E:/Software/Solr/solr-8.1.1/server/solr-webapp/webapp/,AVAILABLE}{E:\Software\Solr\solr-8.1.1\server/solr-webapp/webapp}
+2019-06-26 10:24:28.680 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5cc5b667{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-06-26 10:24:28.680 INFO  (main) [   ] o.e.j.s.Server Started @7987ms
+2019-06-26 10:24:29.514 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-06-26 10:24:29.544 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2019-06-26 10:24:29.546 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2019-06-26 10:24:29.546 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-06-26 10:24:29.546 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-06-26 10:24:29.550 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2019-06-26 10:24:29.577 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-06-26 10:24:29.577 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-06-26 10:24:29.577 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-06-26 10:24:29.577 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-06-26 10:24:29.620 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.CoreContainer Creating SolrCore 'sinhalaNews' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews, trusted=true
+2019-06-26 10:24:29.696 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts, trusted=true
+2019-06-26 10:24:29.704 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.sinhalaNews' (registry 'solr.core.sinhalaNews') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-26 10:24:29.704 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-26 10:24:29.738 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\data\]
+2019-06-26 10:24:29.738 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrCore [[sinhalaNews] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\data\]
+2019-06-26 10:24:29.828 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-06-26 10:24:29.828 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-06-26 10:24:30.716 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-06-26 10:24:30.716 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-06-26 10:24:30.716 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-06-26 10:24:30.717 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-06-26 10:24:30.759 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-06-26 10:24:30.759 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-06-26 10:24:30.759 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-06-26 10:24:30.759 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-06-26 10:24:30.999 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=83
+2019-06-26 10:24:31.144 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@948b0f4[techproducts] main]
+2019-06-26 10:24:31.163 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
+2019-06-26 10:24:31.170 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
+2019-06-26 10:24:31.170 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2019-06-26 10:24:31.172 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
+2019-06-26 10:24:31.173 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2019-06-26 10:24:31.173 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2019-06-26 10:24:31.174 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/stopwords/english
+2019-06-26 10:24:31.175 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
+2019-06-26 10:24:31.175 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2019-06-26 10:24:31.177 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2019-06-26 10:24:31.182 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/synonyms/english
+2019-06-26 10:24:31.213 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-06-26 10:24:31.227 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-06-26 10:24:31.243 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.SolrIndexSearcher Opening [Searcher@35b8a095[sinhalaNews] main]
+2019-06-26 10:24:31.244 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2019-06-26 10:24:31.245 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf
+2019-06-26 10:24:31.246 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-06-26 10:24:31.247 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-06-26 10:24:31.250 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2019-06-26 10:24:31.274 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-06-26 10:24:31.292 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2019-06-26 10:24:31.293 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf\elevate.xml
+2019-06-26 10:24:31.301 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-06-26 10:24:31.328 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@948b0f4[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C32/1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560318840213}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(7.7.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560509578708}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 10:24:31.328 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@35b8a095[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 10:24:31.328 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-26 10:24:31.328 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-06-26 10:24:31.343 INFO  (searcherExecutor-11-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews] Registered new searcher Searcher@35b8a095[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 10:24:31.464 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=3 status=0 QTime=123
+2019-06-26 10:24:31.481 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-26 10:24:31.481 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-06-26 10:24:31.481 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2019-06-26 10:24:31.484 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@948b0f4[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C32/1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560318840213}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(7.7.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560509578708}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 10:24:40.545 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=1
+2019-06-26 10:24:40.610 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=62
+2019-06-26 10:24:40.672 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=50
+2019-06-26 10:24:42.851 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:24:42.867 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561544682832} status=0 QTime=8
+2019-06-26 10:24:42.871 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561544679940&ts=1561544679940} status=503 QTime=2
+2019-06-26 10:24:42.886 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561544682833} status=0 QTime=17
+2019-06-26 10:24:43.004 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=105
+2019-06-26 10:24:43.005 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/system params={wt=json&_=1561544682833} status=0 QTime=129
+2019-06-26 10:24:44.778 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:24:44.783 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=7
+2019-06-26 10:24:44.864 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=83
+2019-06-26 10:24:55.289 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:24:55.291 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 10:24:55.350 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=58
+2019-06-26 10:24:55.396 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=7
+2019-06-26 10:25:00.797 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:25:00.805 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 10:25:00.808 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=managed-schema&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561544695265} status=0 QTime=4
+2019-06-26 10:25:00.879 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 10:25:00.899 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=87
+2019-06-26 10:25:40.885 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:25:40.895 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=schema.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1561544695265} status=0 QTime=0
+2019-06-26 10:25:40.896 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 10:25:40.963 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=7
+2019-06-26 10:25:40.971 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=65
+2019-06-26 10:27:08.651 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:27:08.654 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 10:27:08.721 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=69
+2019-06-26 10:27:10.226 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:27:10.260 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561544682833} status=0 QTime=8
+2019-06-26 10:27:10.261 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561544682832} status=0 QTime=0
+2019-06-26 10:27:10.268 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561544679940&ts=1561544679940} status=503 QTime=0
+2019-06-26 10:27:10.353 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=119
+2019-06-26 10:27:10.353 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/system params={wt=json&_=1561544682833} status=0 QTime=97
+2019-06-26 10:27:14.445 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:27:14.455 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 10:27:14.460 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=6
+2019-06-26 10:27:14.519 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=55
+2019-06-26 10:27:14.622 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=17
+2019-06-26 10:27:19.225 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 10:27:19.232 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:27:19.281 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=8
+2019-06-26 10:27:19.304 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=71
+2019-06-26 10:27:21.774 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 10:27:21.786 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang/stopwords_si.txt&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561544695265} status=0 QTime=1
+2019-06-26 10:27:21.797 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:27:21.853 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=56
+2019-06-26 10:27:21.876 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=5
+2019-06-26 10:43:13.323 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:43:13.325 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 10:43:13.379 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=54
+2019-06-26 10:43:16.122 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:43:16.130 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=3
+2019-06-26 10:43:16.172 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=9
+2019-06-26 10:43:16.195 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=68
+2019-06-26 10:43:16.306 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=9
+2019-06-26 10:43:19.440 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:43:19.475 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=18
+2019-06-26 10:43:19.496 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=55
+2019-06-26 10:43:23.885 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:43:23.893 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 10:43:23.926 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=0
+2019-06-26 10:43:23.957 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=49
+2019-06-26 10:43:24.051 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=9
+2019-06-26 10:43:27.063 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:43:27.076 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 10:43:27.084 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=4
+2019-06-26 10:43:27.122 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=52
+2019-06-26 10:43:27.215 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=6
+2019-06-26 10:43:30.194 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={fl=content&wt=json&_=1561544682832} status=0 QTime=110
+2019-06-26 10:43:36.501 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={fl=content&numTerms=100&wt=json&_=1561544682832} status=0 QTime=81
+2019-06-26 10:44:19.480 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:44:19.486 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 10:44:19.550 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=64
+2019-06-26 10:44:19.563 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 10:44:25.800 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 10:44:25.801 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=2
+2019-06-26 10:44:25.803 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang/stopwords_si.txt&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561544695265} status=0 QTime=0
+2019-06-26 10:44:25.864 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=60
+2019-06-26 10:44:25.870 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 10:45:32.902 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:45:32.907 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561545932877} status=0 QTime=1
+2019-06-26 10:45:32.971 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=55
+2019-06-26 10:45:33.006 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:45:33.017 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561545932877} status=0 QTime=0
+2019-06-26 10:45:33.069 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=52
+2019-06-26 10:45:34.839 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:45:34.846 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:45:34.900 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=56
+2019-06-26 10:46:10.362 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:46:10.369 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561544682832} status=0 QTime=0
+2019-06-26 10:46:10.397 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561544682833} status=0 QTime=8
+2019-06-26 10:46:10.406 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561544679940&ts=1561544679940} status=503 QTime=0
+2019-06-26 10:46:10.474 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=111
+2019-06-26 10:46:10.474 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/system params={wt=json&_=1561544682833} status=0 QTime=76
+2019-06-26 10:46:13.793 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=1
+2019-06-26 10:46:13.803 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:46:13.843 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 10:46:13.862 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=55
+2019-06-26 10:46:16.148 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=schema.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1561544695265} status=0 QTime=0
+2019-06-26 10:46:16.149 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=1
+2019-06-26 10:46:16.152 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:46:16.206 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 10:46:16.206 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=54
+2019-06-26 10:48:17.726 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:48:17.734 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:48:17.750 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=0
+2019-06-26 10:48:17.795 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=62
+2019-06-26 10:48:17.899 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=4
+2019-06-26 10:48:31.499 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:48:31.553 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=53
+2019-06-26 10:48:34.065 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&_=1561546111440} hits=5361 status=0 QTime=4
+2019-06-26 10:48:48.982 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:48:48.988 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:48:49.017 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=1
+2019-06-26 10:48:49.039 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=48
+2019-06-26 10:48:49.096 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=6
+2019-06-26 10:48:53.897 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:48:53.901 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:48:53.923 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=1
+2019-06-26 10:48:53.950 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=49
+2019-06-26 10:48:53.991 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=5
+2019-06-26 10:50:03.374 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:50:03.381 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:50:03.394 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=1
+2019-06-26 10:50:03.423 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=43
+2019-06-26 10:50:03.477 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=6
+2019-06-26 10:50:08.254 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:50:08.262 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:50:08.295 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=0
+2019-06-26 10:50:08.312 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=53
+2019-06-26 10:50:08.419 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=6
+2019-06-26 10:50:14.695 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:50:14.701 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:50:14.713 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=1
+2019-06-26 10:50:14.745 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=46
+2019-06-26 10:50:14.797 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=4
+2019-06-26 10:50:23.465 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:50:23.516 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=49
+2019-06-26 10:50:26.555 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&_=1561546111440} hits=5361 status=0 QTime=0
+2019-06-26 10:50:41.363 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:50:41.373 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561544682833} status=0 QTime=7
+2019-06-26 10:50:41.423 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=57
+2019-06-26 10:50:42.534 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:50:42.535 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 10:50:42.597 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=59
+2019-06-26 10:50:59.487 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2019-06-26 10:50:59.494 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=5
+2019-06-26 10:50:59.495 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 10:50:59.529 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=????+????????+?????+???,+????+???&analysis.showmatch=true&verbose_output=0&analysis.query=????+????????+?????+???,+????+???&wt=json&_=1561544684743&analysis.fieldtype=text_si} status=0 QTime=42
+2019-06-26 10:50:59.588 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=90
+2019-06-26 11:54:47.606 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=3
+2019-06-26 11:54:47.610 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 11:54:47.632 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=1
+2019-06-26 11:54:47.686 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=80
+2019-06-26 11:54:47.777 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=5
+2019-06-26 11:55:23.145 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
+2019-06-26 11:55:23.217 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561544834411} status=0 QTime=588
+2019-06-26 11:55:24.751 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=2
+2019-06-26 11:55:24.755 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=10
+2019-06-26 11:55:24.832 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=4
+2019-06-26 11:55:39.184 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
+2019-06-26 11:55:39.270 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561544834411} status=0 QTime=150
+2019-06-26 11:55:40.799 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=7
+2019-06-26 11:55:40.801 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=1
+2019-06-26 11:55:40.844 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=4
+2019-06-26 11:55:44.089 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 11:55:44.096 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 11:55:44.110 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=1
+2019-06-26 11:55:44.146 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=47
+2019-06-26 11:55:44.293 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=7
+2019-06-26 11:56:00.677 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
+2019-06-26 11:56:00.723 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561544834411} status=0 QTime=132
+2019-06-26 11:56:02.237 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=0
+2019-06-26 11:56:02.238 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 11:56:02.269 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=5
+2019-06-26 11:56:18.501 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
+2019-06-26 11:56:18.547 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561544834411} status=0 QTime=107
+2019-06-26 11:56:20.063 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 11:56:20.065 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=0
+2019-06-26 11:56:20.102 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=4
+2019-06-26 11:56:39.663 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
+2019-06-26 11:56:39.756 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/schema params={wt=json&_=1561544834411} status=0 QTime=153
+2019-06-26 11:56:41.272 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 11:56:41.275 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=0
+2019-06-26 11:56:41.312 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=3
+2019-06-26 11:56:56.555 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 11:56:56.570 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561544679938} status=0 QTime=10
+2019-06-26 11:56:56.606 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=46
+2019-06-26 11:56:56.695 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 11:56:56.710 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561544679938} status=0 QTime=9
+2019-06-26 11:56:56.752 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=53
+2019-06-26 11:56:57.517 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.SolrResourceLoader [sinhalaNews] Added 63 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
+2019-06-26 11:56:57.595 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
+2019-06-26 11:56:57.701 WARN  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2019-06-26 11:56:57.717 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.IndexSchema [sinhalaNews] Schema name=default-config
+2019-06-26 11:56:58.223 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-06-26 11:56:58.262 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.CoreContainer Reloading SolrCore 'sinhalaNews' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews
+2019-06-26 11:56:58.307 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.sinhalaNews' (registry 'solr.core.sinhalaNews') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-26 11:56:58.307 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.SolrCore [[sinhalaNews] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\data\]
+2019-06-26 11:56:58.321 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-06-26 11:56:58.494 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-06-26 11:56:58.494 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-06-26 11:56:58.508 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.SolrIndexSearcher Opening [Searcher@33bde6a0[sinhalaNews] main]
+2019-06-26 11:56:58.510 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf
+2019-06-26 11:56:58.510 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-06-26 11:56:58.511 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-06-26 11:56:58.513 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-06-26 11:56:58.532 INFO  (searcherExecutor-20-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@33bde6a0[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 11:56:58.533 INFO  (searcherExecutor-20-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-26 11:56:58.533 INFO  (searcherExecutor-20-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-06-26 11:56:58.544 INFO  (searcherExecutor-20-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews] Registered new searcher Searcher@33bde6a0[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 11:56:58.731 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-06-26 11:56:59.601 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.SolrIndexSearcher Opening [Searcher@297d14ed[sinhalaNews] main]
+2019-06-26 11:56:59.602 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews]  CLOSING SolrCore org.apache.solr.core.SolrCore@740f4d21
+2019-06-26 11:56:59.603 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.sinhalaNews, tag=740f4d21
+2019-06-26 11:56:59.604 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@19b11562: rootName = null, domain = solr.core.sinhalaNews, service url = null, agent id = null] for registry solr.core.sinhalaNews / com.codahale.metrics.MetricRegistry@3321c1b0
+2019-06-26 11:56:59.614 INFO  (searcherExecutor-20-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@297d14ed[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 11:56:59.614 INFO  (searcherExecutor-20-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-26 11:56:59.617 INFO  (searcherExecutor-20-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews] Registered new searcher Searcher@297d14ed[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 11:56:59.673 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=sinhalaNews&action=RELOAD&wt=json&_=1561544679938} status=0 QTime=2235
+2019-06-26 11:57:00.738 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 11:57:00.754 INFO  (qtp1702940637-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561544679938} status=0 QTime=9
+2019-06-26 11:57:00.804 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=60
+2019-06-26 11:57:03.393 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 11:57:03.408 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 11:57:03.420 INFO  (qtp1702940637-24) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561544682833} status=0 QTime=8
+2019-06-26 11:57:03.435 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561544679940&ts=1561544679940} status=503 QTime=0
+2019-06-26 11:57:03.490 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=93
+2019-06-26 11:57:03.521 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/system params={wt=json&_=1561544682833} status=0 QTime=92
+2019-06-26 11:57:07.121 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 11:57:07.122 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 11:57:07.178 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=56
+2019-06-26 11:57:07.179 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 11:57:11.893 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 11:57:11.893 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=solrconfig.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1561544695265} status=0 QTime=0
+2019-06-26 11:57:11.895 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=1
+2019-06-26 11:57:11.948 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 11:57:11.966 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=62
+2019-06-26 12:09:36.282 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:09:36.296 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561544682833} status=0 QTime=6
+2019-06-26 12:09:36.350 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=66
+2019-06-26 12:09:37.325 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:09:37.337 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/config params={wt=json&_=1561544834411} status=0 QTime=0
+2019-06-26 12:09:37.339 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=3
+2019-06-26 12:09:37.395 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=65
+2019-06-26 12:09:37.485 INFO  (qtp1702940637-21) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561544682832} status=0 QTime=2
+2019-06-26 12:09:41.597 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:09:41.601 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561544682832} status=0 QTime=1
+2019-06-26 12:09:41.662 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=62
+2019-06-26 12:14:15.750 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:14:15.769 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561544679938} status=0 QTime=10
+2019-06-26 12:14:15.811 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=56
+2019-06-26 12:14:15.933 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:14:15.949 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561544679938} status=0 QTime=11
+2019-06-26 12:14:15.987 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=53
+2019-06-26 12:14:17.355 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.SolrResourceLoader [sinhalaNews] Added 63 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
+2019-06-26 12:14:17.399 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
+2019-06-26 12:14:17.460 WARN  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2019-06-26 12:14:17.502 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.IndexSchema [sinhalaNews] Schema name=default-config
+2019-06-26 12:14:17.709 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-06-26 12:14:17.749 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.CoreContainer Reloading SolrCore 'sinhalaNews' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews
+2019-06-26 12:14:17.777 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.sinhalaNews' (registry 'solr.core.sinhalaNews') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-26 12:14:17.778 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.SolrCore [[sinhalaNews] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\data\]
+2019-06-26 12:14:17.783 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-06-26 12:14:17.902 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-06-26 12:14:17.902 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-06-26 12:14:17.911 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.SolrIndexSearcher Opening [Searcher@55d62455[sinhalaNews] main]
+2019-06-26 12:14:17.913 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf
+2019-06-26 12:14:17.913 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-06-26 12:14:17.913 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-06-26 12:14:17.914 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.DirectSolrSpellChecker init: {name=sinhala,field=spellcheck,classname=solr.DirectSolrSpellChecker,spellcheckIndexDir=./spellchecker,buildOnCommit=true,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-06-26 12:14:17.914 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: sinhala
+2019-06-26 12:14:17.916 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-06-26 12:14:17.928 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@55d62455[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 12:14:17.928 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-26 12:14:17.928 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-06-26 12:14:17.928 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: sinhala
+2019-06-26 12:14:17.935 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews] Registered new searcher Searcher@55d62455[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 12:14:18.020 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-06-26 12:14:18.057 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.SolrIndexSearcher Opening [Searcher@b1402d7[sinhalaNews] main]
+2019-06-26 12:14:18.058 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews]  CLOSING SolrCore org.apache.solr.core.SolrCore@7289efdb
+2019-06-26 12:14:18.058 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.sinhalaNews, tag=7289efdb
+2019-06-26 12:14:18.058 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@251cef9e: rootName = null, domain = solr.core.sinhalaNews, service url = null, agent id = null] for registry solr.core.sinhalaNews / com.codahale.metrics.MetricRegistry@3321c1b0
+2019-06-26 12:14:18.058 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@b1402d7[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 12:14:18.058 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-26 12:14:18.058 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: sinhala
+2019-06-26 12:14:18.064 INFO  (searcherExecutor-24-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews] Registered new searcher Searcher@b1402d7[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.1.1):C2:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561108968635}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.1.1):C340:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445272434}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.1.1):C501:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273284}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.1.1):C366:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445273940}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_4(8.1.1):C697:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445275182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_5(8.1.1):C690:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445276285}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.1.1):C624:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445277004}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.1.1):C924:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445278331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.1.1):C838:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445279503}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.1.1):C379:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561445280252}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-26 12:14:18.085 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=sinhalaNews&action=RELOAD&wt=json&_=1561544679938} status=0 QTime=756
+2019-06-26 12:14:19.154 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:14:19.180 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561544679938} status=0 QTime=8
+2019-06-26 12:14:19.222 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=55
+2019-06-26 12:14:24.680 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:14:24.711 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/replication params={wt=json&command=details&_=1561544682833} status=0 QTime=16
+2019-06-26 12:14:24.744 INFO  (qtp1702940637-16) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561544682832} status=0 QTime=8
+2019-06-26 12:14:24.747 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561544679940&ts=1561544679940} status=503 QTime=0
+2019-06-26 12:14:24.802 INFO  (qtp1702940637-19) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/system params={wt=json&_=1561544682833} status=0 QTime=103
+2019-06-26 12:14:24.803 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=118
+2019-06-26 12:14:27.462 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:14:27.520 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=56
+2019-06-26 12:14:30.603 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=*:*&_=1561546111440} hits=5361 status=0 QTime=4
+2019-06-26 12:15:03.624 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=title:????????&spellcheck=on&_=1561546111440} hits=2 status=0 QTime=31
+2019-06-26 12:15:22.184 INFO  (qtp1702940637-17) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/select params={q=title:???????&spellcheck=on&_=1561546111440} hits=0 status=0 QTime=1
+2019-06-26 12:15:57.385 INFO  (qtp1702940637-20) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=2
+2019-06-26 12:15:57.386 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:15:57.456 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 12:15:57.464 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=77
+2019-06-26 12:16:01.096 INFO  (qtp1702940637-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561544679938} status=0 QTime=0
+2019-06-26 12:16:01.097 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=managed-schema&contentType=text/plain;charset%3Dutf-8&wt=json&_=1561544695265} status=0 QTime=0
+2019-06-26 12:16:01.098 INFO  (qtp1702940637-18) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={wt=json&_=1561544695265} status=0 QTime=3
+2019-06-26 12:16:01.141 INFO  (qtp1702940637-23) [   x:sinhalaNews] o.a.s.c.S.Request [sinhalaNews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1561544695265} status=0 QTime=6
+2019-06-26 12:16:01.166 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561544679940} status=0 QTime=66
+2019-06-26 12:17:40.496 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@5cc5b667{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-06-26 12:17:40.496 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-06-26 12:17:40.498 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=428696898
+2019-06-26 12:17:40.500 INFO  (coreCloseExecutor-28-thread-2) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@4a872d90
+2019-06-26 12:17:40.500 INFO  (coreCloseExecutor-28-thread-2) [   x:techproducts] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts, tag=4a872d90
+2019-06-26 12:17:40.500 INFO  (coreCloseExecutor-28-thread-2) [   x:techproducts] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@35328782: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts / com.codahale.metrics.MetricRegistry@d099dd0
+2019-06-26 12:17:40.501 INFO  (coreCloseExecutor-28-thread-1) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews]  CLOSING SolrCore org.apache.solr.core.SolrCore@4dbdb995
+2019-06-26 12:17:40.507 INFO  (coreCloseExecutor-28-thread-1) [   x:sinhalaNews] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.sinhalaNews, tag=4dbdb995
+2019-06-26 12:17:40.507 INFO  (coreCloseExecutor-28-thread-1) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@392497cb: rootName = null, domain = solr.core.sinhalaNews, service url = null, agent id = null] for registry solr.core.sinhalaNews / com.codahale.metrics.MetricRegistry@3321c1b0
+2019-06-26 12:17:40.569 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-06-26 12:17:40.570 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@76a36b71: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@12f6fe0f
+2019-06-26 12:17:40.572 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-06-26 12:17:40.572 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@35fe2125: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4f166ee4
+2019-06-26 12:17:40.573 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-06-26 12:17:40.573 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@94f6bfb: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@72d30a37
+2019-06-26 12:17:40.600 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@649bec2e{/solr,null,UNAVAILABLE}{E:\Software\Solr\solr-8.1.1\server/solr-webapp/webapp}

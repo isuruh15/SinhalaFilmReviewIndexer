@@ -455,11 +455,13 @@
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
+  <field name="comments" type="plongs"/>
   <field name="content" type="text_si" uninvertible="true" indexed="true" stored="true"/>
   <field name="date" type="text_general" uninvertible="true" indexed="true" stored="true"/>
   <field name="delete" type="text_general"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
   <field name="spellcheck" type="text_si" uninvertible="true" indexed="true" stored="true"/>
+  <field name="tags" type="text_general"/>
   <field name="title" type="text_si" uninvertible="true" indexed="true" stored="true"/>
   <field name="views" type="text_general" uninvertible="true" indexed="true" stored="true"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
@@ -533,4 +535,5 @@
   <copyField source="content" dest="spellcheck"/>
   <copyField source="title" dest="spellcheck"/>
   <copyField source="delete" dest="delete_str" maxChars="256"/>
+  <copyField source="tags" dest="tags_str" maxChars="256"/>
 </schema>
