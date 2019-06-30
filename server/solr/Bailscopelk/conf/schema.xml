@@ -307,7 +307,6 @@
       <analyzer type="index">
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="lang/stopwords_si.txt" />
-	<filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_si.txt" ignoreCase="false"/>
         <!-- in this example, we will only use synonyms at query time
         <filter class="solr.SynonymGraphFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
 	
@@ -319,7 +318,6 @@
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="lang/stopwords_si.txt" />
         <filter class="solr.SynonymGraphFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
-	<filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_si.txt" ignoreCase="false"/>
         <filter class="solr.LowerCaseFilterFactory"/>
 	
       </analyzer>

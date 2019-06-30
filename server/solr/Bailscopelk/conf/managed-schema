@@ -410,17 +410,15 @@
       <filter class="solr.SnowballPorterFilterFactory" language="Russian"/>
     </analyzer>
   </fieldType>
-  <!--fieldType name="text_si" class="solr.TextField" positionIncrementGap="100" multiValued="true"-->
+  <fieldType name="text_si" class="solr.TextField" positionIncrementGap="100" multiValued="true">
     <analyzer type="index">
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="lang/stopwords_si.txt" ignoreCase="true"/>
-      <filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_si.txt" ignoreCase="false"/>
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
     <analyzer type="query">
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="lang/stopwords_si.txt" ignoreCase="true"/>
-      <filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_si.txt" ignoreCase="false"/>
       <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms.txt"/>
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
