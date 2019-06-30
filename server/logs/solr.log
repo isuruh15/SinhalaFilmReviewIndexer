@@ -1,419 +1,91 @@
-2019-06-29 04:31:45.830 INFO  (main) [   ] o.e.j.u.log Logging initialized @20551ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-06-29 04:31:46.907 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-06-29 04:31:46.962 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_121-b13
-2019-06-29 04:31:47.032 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///E:/Software/Solr/solr-8.1.1/server/contexts/] at interval 0
-2019-06-29 04:31:56.301 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-06-29 04:31:56.332 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-06-29 04:31:56.333 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-06-29 04:31:56.394 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2019-06-29 04:31:56.978 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-06-29 04:31:57.028 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.1.1
-2019-06-29 04:31:57.029 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-06-29 04:31:57.029 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: E:\Software\Solr\solr-8.1.1
-2019-06-29 04:31:57.056 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-06-29T04:31:57.056Z
-2019-06-29 04:31:57.315 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: E:\Software\Solr\solr-8.1.1\server\solr
-2019-06-29 04:31:57.382 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from E:\Software\Solr\solr-8.1.1\server\solr\solr.xml
-2019-06-29 04:31:58.549 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
-2019-06-29 04:32:01.167 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-06-29 04:32:02.535 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@22875539[provider=null,keyStore=null,trustStore=null]
-2019-06-29 04:32:02.879 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@52d239ba[provider=null,keyStore=null,trustStore=null]
-2019-06-29 04:32:03.776 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-06-29 04:32:03.794 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-06-29 04:32:04.172 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-29 04:32:04.173 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-29 04:32:04.197 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-29 04:32:04.812 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath E:\Software\Solr\solr-8.1.1\server\solr
-2019-06-29 04:32:04.813 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [sinhalaNews, techproducts]
-2019-06-29 04:32:05.428 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrResourceLoader [sinhalaNews] Added 63 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
-2019-06-29 04:32:05.428 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrResourceLoader [techproducts] Added 61 libs to classloader, from paths: [/E:/Software/Solr/solr-8.1.1/contrib/clustering/lib, /E:/Software/Solr/solr-8.1.1/contrib/extraction/lib, /E:/Software/Solr/solr-8.1.1/contrib/langid/lib, /E:/Software/Solr/solr-8.1.1/contrib/velocity/lib, /E:/Software/Solr/solr-8.1.1/dist]
-2019-06-29 04:32:06.005 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@649bec2e{/solr,file:///E:/Software/Solr/solr-8.1.1/server/solr-webapp/webapp/,AVAILABLE}{E:\Software\Solr\solr-8.1.1\server/solr-webapp/webapp}
-2019-06-29 04:32:06.079 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5cc5b667{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-06-29 04:32:06.079 INFO  (main) [   ] o.e.j.s.Server Started @40811ms
-2019-06-29 04:32:08.105 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=294
-2019-06-29 04:32:18.382 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
-2019-06-29 04:32:18.495 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2019-06-29 04:32:19.007 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.IndexSchema [techproducts] Schema name=example
-2019-06-29 04:32:19.170 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
-2019-06-29 04:32:19.362 WARN  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2019-06-29 04:32:19.391 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.IndexSchema [sinhalaNews] Schema name=default-config
-2019-06-29 04:32:22.045 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
-2019-06-29 04:32:22.046 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
-2019-06-29 04:32:22.046 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2019-06-29 04:32:22.046 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2019-06-29 04:32:22.086 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-06-29 04:32:22.125 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
-2019-06-29 04:32:22.125 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2019-06-29 04:32:22.125 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2019-06-29 04:32:22.125 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2019-06-29 04:32:22.125 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2019-06-29 04:32:22.225 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.CoreContainer Creating SolrCore 'sinhalaNews' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews, trusted=true
-2019-06-29 04:32:22.313 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.sinhalaNews' (registry 'solr.core.sinhalaNews') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-29 04:32:22.437 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.c.SolrCore [[sinhalaNews] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\data\]
-2019-06-29 04:32:22.482 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts, trusted=true
-2019-06-29 04:32:22.482 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-29 04:32:22.483 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts], dataDir=[E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\data\]
-2019-06-29 04:32:22.718 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-06-29 04:32:22.718 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-06-29 04:32:26.170 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-06-29 04:32:26.170 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-06-29 04:32:26.203 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-06-29 04:32:26.203 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-06-29 04:32:26.596 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-06-29 04:32:26.596 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-06-29 04:32:26.718 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-06-29 04:32:26.718 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-06-29 04:32:31.646 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=1
-2019-06-29 04:32:31.712 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=62
-2019-06-29 04:32:31.795 INFO  (qtp1702940637-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=56
-2019-06-29 04:32:32.004 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@23d4d778[techproducts] main]
-2019-06-29 04:32:32.112 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-29 04:32:32.144 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-29 04:32:32.145 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
-2019-06-29 04:32:32.157 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-29 04:32:32.158 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
-2019-06-29 04:32:32.158 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
-2019-06-29 04:32:32.158 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/stopwords/english
-2019-06-29 04:32:32.167 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf
-2019-06-29 04:32:32.167 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
-2019-06-29 04:32:32.168 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
-2019-06-29 04:32:32.171 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/synonyms/english
-2019-06-29 04:32:32.229 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-06-29 04:32:32.272 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-06-29 04:32:32.291 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2019-06-29 04:32:32.334 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-06-29 04:32:32.368 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-06-29 04:32:32.370 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: E:\Software\Solr\solr-8.1.1\server\solr\techproducts\solr\techproducts\conf\elevate.xml
-2019-06-29 04:32:32.565 INFO  (coreLoadExecutor-9-thread-2) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-06-29 04:32:32.664 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.SolrIndexSearcher Opening [Searcher@eedc4bd[sinhalaNews] main]
-2019-06-29 04:32:32.665 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf
-2019-06-29 04:32:32.665 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-06-29 04:32:32.666 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=1,maxQueryFrequency=0.01}
-2019-06-29 04:32:32.666 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.s.DirectSolrSpellChecker init: {name=sinhala,field=spellcheck,classname=solr.DirectSolrSpellChecker,spellcheckIndexDir=./spellchecker,buildOnCommit=true,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-06-29 04:32:32.666 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: sinhala
-2019-06-29 04:32:32.678 INFO  (coreLoadExecutor-9-thread-1) [   x:sinhalaNews] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-06-29 04:32:32.687 INFO  (searcherExecutor-11-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@23d4d778[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C32/1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560318840213}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(7.7.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560509578708}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:32:32.692 INFO  (searcherExecutor-10-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@eedc4bd[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(8.1.1):C2172:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561563079269}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_i(8.1.1):C1769:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561563080199}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_j(8.1.1):C1418:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561563081060}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:32:32.692 INFO  (searcherExecutor-10-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:32:32.692 INFO  (searcherExecutor-10-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-06-29 04:32:32.693 INFO  (searcherExecutor-10-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: sinhala
-2019-06-29 04:32:32.706 INFO  (searcherExecutor-10-thread-1-processing-x:sinhalaNews) [   x:sinhalaNews] o.a.s.c.SolrCore [sinhalaNews] Registered new searcher Searcher@eedc4bd[sinhalaNews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(8.1.1):C2172:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561563079269}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_i(8.1.1):C1769:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561563080199}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_j(8.1.1):C1418:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561563081060}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:32:32.998 INFO  (searcherExecutor-11-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=3 status=0 QTime=283
-2019-06-29 04:32:33.022 INFO  (searcherExecutor-11-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:32:33.022 INFO  (searcherExecutor-11-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-06-29 04:32:33.023 INFO  (searcherExecutor-11-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2019-06-29 04:32:33.028 INFO  (searcherExecutor-11-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@23d4d778[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C32/1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560318840213}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(7.7.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1560509578708}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:32:34.370 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:32:34.401 INFO  (qtp1702940637-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561782750803} status=0 QTime=32
-2019-06-29 04:32:34.460 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=86
-2019-06-29 04:32:34.512 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:32:34.523 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561782750803} status=0 QTime=6
-2019-06-29 04:32:34.568 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=53
-2019-06-29 04:33:12.427 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.sinhalaNews, tag=7877a5bf
-2019-06-29 04:33:12.428 INFO  (qtp1702940637-22) [   x:sinhalaNews] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1e44b821: rootName = null, domain = solr.core.sinhalaNews, service url = null, agent id = null] for registry solr.core.sinhalaNews / com.codahale.metrics.MetricRegistry@41cb83d4
-2019-06-29 04:33:12.582 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.movieReview' (registry 'solr.core.movieReview') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-06-29 04:33:12.625 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=sinhalaNews&other=movieReview&action=RENAME&wt=json&_=1561782750803} status=0 QTime=199
-2019-06-29 04:33:12.705 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:33:12.719 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1561782750803} status=0 QTime=5
-2019-06-29 04:33:12.774 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=59
-2019-06-29 04:33:19.104 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:33:19.133 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561782799086} status=0 QTime=20
-2019-06-29 04:33:19.137 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561782750805&ts=1561782750804} status=503 QTime=5
-2019-06-29 04:33:19.142 INFO  (qtp1702940637-42) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/replication params={wt=json&command=details&_=1561782799086} status=0 QTime=23
-2019-06-29 04:33:19.248 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=136
-2019-06-29 04:33:19.250 INFO  (qtp1702940637-21) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/system params={wt=json&_=1561782799086} status=0 QTime=126
-2019-06-29 04:33:28.149 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:33:28.184 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=31
-2019-06-29 04:33:28.230 INFO  (qtp1702940637-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=77
-2019-06-29 04:36:36.522 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.u.p.LogUpdateProcessorFactory [movieReview]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1561782754323}{} 0 49
-2019-06-29 04:36:36.555 ERROR (qtp1702940637-44) [   x:movieReview] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse ':': Encountered " ":" ": "" at line 1, column 0.
-Was expecting one of:
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    <QUOTED> ...
-    <TERM> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    <TERM> ...
-    
-	at org.apache.solr.update.DirectUpdateHandler2.getQuery(DirectUpdateHandler2.java:476)
-	at org.apache.solr.update.DirectUpdateHandler2.deleteByQuery(DirectUpdateHandler2.java:493)
-	at org.apache.solr.update.processor.RunUpdateProcessor.processDelete(RunUpdateProcessorFactory.java:87)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalDelete(DistributedUpdateProcessor.java:263)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalDeleteByQuery(DistributedUpdateProcessor.java:879)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionDeleteByQuery(DistributedUpdateProcessor.java:850)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.doDeleteByQuery(DistributedUpdateProcessor.java:811)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.doDeleteByQuery(DistributedUpdateProcessor.java:792)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.processDelete(DistributedUpdateProcessor.java:714)
-	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processDelete(LogUpdateProcessorFactory.java:124)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processDelete(FieldNameMutatingUpdateProcessorFactory.java:80)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processDelete(UpdateRequestProcessor.java:59)
-	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleDeleteMap(JsonLoader.java:400)
-	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleDeleteCommand(JsonLoader.java:317)
-	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:171)
-	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
-	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
-	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
-	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2566)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:756)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:502)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse ':': Encountered " ":" ": "" at line 1, column 0.
-Was expecting one of:
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    <QUOTED> ...
-    <TERM> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    <TERM> ...
-    
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
-	at org.apache.solr.update.DirectUpdateHandler2.getQuery(DirectUpdateHandler2.java:458)
-	... 67 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 0.
-Was expecting one of:
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    <QUOTED> ...
-    <TERM> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    <TERM> ...
-    
-	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
-	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:167)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
-	... 70 more
-
-2019-06-29 04:37:18.844 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.s.SolrIndexSearcher Opening [Searcher@23248ec2[movieReview] realtime]
-2019-06-29 04:37:18.847 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.u.p.LogUpdateProcessorFactory [movieReview]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1561782754323}{deleteByQuery=*:* (-1637648211600474112)} 0 295
-2019-06-29 04:37:19.848 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
-2019-06-29 04:37:19.849 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@62ffb0da[movieReview] main]
-2019-06-29 04:37:19.853 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:37:19.854 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@62ffb0da[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-06-29 04:37:19.854 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:37:19.854 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: sinhala
-2019-06-29 04:37:19.863 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [movieReview] Registered new searcher Searcher@62ffb0da[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-06-29 04:37:29.020 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:37:29.073 INFO  (qtp1702940637-23) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1561783049007} status=0 QTime=43
-2019-06-29 04:37:29.093 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=64
-2019-06-29 04:37:30.388 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:37:30.401 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=8
-2019-06-29 04:37:30.459 INFO  (qtp1702940637-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=69
-2019-06-29 04:37:33.850 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2019-06-29 04:37:33.850 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@7ef04335 commitCommandVersion:0
-2019-06-29 04:37:34.027 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6168e4c0[movieReview] realtime]
-2019-06-29 04:37:34.028 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:47:37.692 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at E:\Software\Solr\solr-8.1.1\server\solr\sinhalaNews\conf\managed-schema
-2019-06-29 04:47:38.911 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
-2019-06-29 04:47:39.645 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5a5147e0[movieReview] main]
-2019-06-29 04:47:39.649 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:47:39.649 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5a5147e0[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:39.649 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:47:39.649 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: sinhala
-2019-06-29 04:47:39.653 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [movieReview] Registered new searcher Searcher@5a5147e0[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:39.913 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
-2019-06-29 04:47:40.262 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@4c5a1f6f[movieReview] main]
-2019-06-29 04:47:40.263 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:47:40.263 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4c5a1f6f[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:40.263 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:47:40.263 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: sinhala
-2019-06-29 04:47:40.266 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [movieReview] Registered new searcher Searcher@4c5a1f6f[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:40.949 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
-2019-06-29 04:47:42.281 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@251e08da[movieReview] main]
-2019-06-29 04:47:42.281 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:47:42.282 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@251e08da[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:42.282 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:47:42.282 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: sinhala
-2019-06-29 04:47:42.286 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [movieReview] Registered new searcher Searcher@251e08da[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:42.287 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
-2019-06-29 04:47:42.678 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.u.p.LogUpdateProcessorFactory [movieReview]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1561782754323}{add=[89c90426-de07-4936-8915-2bca35c07dfd (1637648860771778560), 490a203e-de4e-4914-ad40-2521d4d4bdc2 (1637648860876636160), 63f88572-5965-439b-a315-5a5a5cbc751c (1637648860879781888), f739a1b9-682a-4654-aaa8-41ff19cebbdc (1637648860881879040), 646a4ae8-adb8-453d-a105-974950c7dc43 (1637648860885024768), f6edf739-176e-4c20-afec-bb0a0c21e8be (1637648860888170496), 00645641-eca3-4000-b68f-000dff26d20f (1637648860890267648), 6c666d91-8a7d-41cd-ba9c-39612e47ad49 (1637648860892364800), af3223a5-e111-48d5-a1b2-e493e9246f2d (1637648860899704832), 5a1a9b07-ac3b-4815-90a9-2201cef3c482 (1637648860901801984), ... (6053 adds)]} 0 5507
-2019-06-29 04:47:43.082 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@7318278a[movieReview] main]
-2019-06-29 04:47:43.083 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:47:43.084 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7318278a[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_n(8.1.1):C1840:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663051}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:43.084 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:47:43.084 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: sinhala
-2019-06-29 04:47:43.087 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [movieReview] Registered new searcher Searcher@7318278a[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_n(8.1.1):C1840:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663051}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:43.306 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
-2019-06-29 04:47:43.471 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@338d38a7[movieReview] main]
-2019-06-29 04:47:43.472 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:47:43.472 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@338d38a7[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_n(8.1.1):C1840:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663051}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_o(8.1.1):C639:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663465}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:43.472 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-06-29 04:47:43.472 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: sinhala
-2019-06-29 04:47:43.475 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [movieReview] Registered new searcher Searcher@338d38a7[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_n(8.1.1):C1840:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663051}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_o(8.1.1):C639:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663465}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-06-29 04:47:52.783 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=2
-2019-06-29 04:47:52.816 INFO  (qtp1702940637-21) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/replication params={wt=json&command=details&_=1561782799086} status=0 QTime=9
-2019-06-29 04:47:52.833 INFO  (qtp1702940637-42) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561782799086} status=0 QTime=1
-2019-06-29 04:47:52.841 INFO  (qtp1702940637-21) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561782750805&ts=1561782750804} status=503 QTime=0
-2019-06-29 04:47:52.902 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/system params={wt=json&_=1561782799086} status=0 QTime=110
-2019-06-29 04:47:52.906 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=85
-2019-06-29 04:47:52.931 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2019-06-29 04:47:52.933 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@7ef04335 commitCommandVersion:0
-2019-06-29 04:47:56.602 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@3116dd53[movieReview] realtime]
-2019-06-29 04:47:56.620 INFO  (commitScheduler-16-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-06-29 04:47:59.541 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:47:59.587 INFO  (qtp1702940637-42) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=4
-2019-06-29 04:47:59.619 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=77
-2019-06-29 04:47:59.620 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=37
-2019-06-29 04:47:59.786 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=16
-2019-06-29 04:48:04.037 INFO  (qtp1702940637-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:48:04.043 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=1
-2019-06-29 04:48:04.056 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=0
-2019-06-29 04:48:04.089 INFO  (qtp1702940637-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=46
-2019-06-29 04:48:04.140 INFO  (qtp1702940637-15) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=6
-2019-06-29 04:48:05.744 INFO  (qtp1702940637-15) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=content&wt=json&_=1561782799086} status=0 QTime=84
-2019-06-29 04:48:27.682 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=content&numTerms=100&wt=json&_=1561782799086} status=0 QTime=51
-2019-06-29 04:48:46.193 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:48:46.197 INFO  (qtp1702940637-15) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:48:46.280 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=87
-2019-06-29 04:48:46.284 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=0
-2019-06-29 04:48:46.517 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=7
-2019-06-29 04:48:47.928 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=date&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:48:56.805 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:48:56.809 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:48:56.825 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=1
-2019-06-29 04:48:56.854 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=50
-2019-06-29 04:48:56.944 INFO  (qtp1702940637-15) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=6
-2019-06-29 04:48:59.742 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=comments&wt=json&_=1561782799086} status=0 QTime=0
-2019-06-29 04:49:01.977 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=comments&wt=json&_=1561782799086} status=0 QTime=0
-2019-06-29 04:49:14.486 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:49:14.491 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:49:14.518 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=2
-2019-06-29 04:49:14.557 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=52
-2019-06-29 04:49:14.732 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=8
-2019-06-29 04:49:16.491 INFO  (qtp1702940637-22) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=views&wt=json&_=1561782799086} status=0 QTime=5
-2019-06-29 04:49:23.894 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=1
-2019-06-29 04:49:23.897 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:49:23.912 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=1
-2019-06-29 04:49:23.943 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=45
-2019-06-29 04:49:24.009 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=11
-2019-06-29 04:49:26.076 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=title&wt=json&_=1561782799086} status=0 QTime=14
-2019-06-29 04:49:32.299 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=title&numTerms=100&wt=json&_=1561782799086} status=0 QTime=23
-2019-06-29 04:49:49.431 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:49:49.439 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:49:49.456 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=0
-2019-06-29 04:49:49.481 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=50
-2019-06-29 04:49:49.575 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=10
-2019-06-29 04:49:50.924 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=tags&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:49:57.692 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:49:57.708 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:49:57.722 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=1
-2019-06-29 04:49:57.749 INFO  (qtp1702940637-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=49
-2019-06-29 04:49:57.870 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=7
-2019-06-29 04:50:05.820 INFO  (qtp1702940637-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:50:05.834 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=8
-2019-06-29 04:50:05.852 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/config params={wt=json&_=1561783679478} status=0 QTime=1
-2019-06-29 04:50:05.873 INFO  (qtp1702940637-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=46
-2019-06-29 04:50:05.934 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1561782799086} status=0 QTime=4
-2019-06-29 04:50:13.352 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=tags&wt=json&_=1561782799086} status=0 QTime=2
-2019-06-29 04:50:27.945 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={fl=tags&numTerms=100&wt=json&_=1561782799086} status=0 QTime=7
-2019-06-29 04:54:28.549 INFO  (qtp1702940637-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:54:28.558 INFO  (qtp1702940637-44) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561782799086} status=0 QTime=1
-2019-06-29 04:54:28.610 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=53
-2019-06-29 04:54:31.912 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561782750803} status=0 QTime=0
-2019-06-29 04:54:31.962 INFO  (qtp1702940637-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561782750803} status=0 QTime=49
-2019-06-29 04:54:33.913 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/select params={q=*:*&_=1561784071868} hits=6053 status=0 QTime=3
-2019-06-29 04:55:03.010 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/select params={q=tags:??????????&_=1561784071868} hits=2609 status=0 QTime=5
-2019-06-29 04:55:05.125 INFO  (qtp1702940637-24) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/select params={q=tags:??????????&_=1561784071868} hits=2609 status=0 QTime=0
-2019-06-29 04:55:59.411 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/select params={q=tags:??&_=1561784071868} hits=4211 status=0 QTime=7
-2019-06-29 04:56:29.152 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/select params={q=tags:?????&_=1561784071868} hits=4017 status=0 QTime=3
-2019-06-29 04:56:49.355 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/select params={q=tags:????????&_=1561784071868} hits=120 status=0 QTime=1
-2019-06-29 04:57:34.971 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,attributes = {startup=lazy, name=/spell, class=solr.SearchHandler},args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=10,spellcheck.maxCollations=5,df=_text_},last-components=[spellcheck]}} 
-2019-06-29 04:57:35.020 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/spell params={q=content:?????+??+???+??????+????+??+?????&_=1561784071868} hits=22 status=0 QTime=48
-2019-06-29 04:57:48.167 INFO  (qtp1702940637-43) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/spell params={q=content:????+??+???+??????+????+??+?????&_=1561784071868} hits=0 status=0 QTime=177
-2019-06-29 04:59:12.144 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@5cc5b667{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-06-29 04:59:12.144 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-06-29 04:59:12.144 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=428696898
-2019-06-29 04:59:12.144 INFO  (coreCloseExecutor-20-thread-1) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@72a84832
-2019-06-29 04:59:12.144 INFO  (coreCloseExecutor-20-thread-2) [   x:movieReview] o.a.s.c.SolrCore [movieReview]  CLOSING SolrCore org.apache.solr.core.SolrCore@7877a5bf
-2019-06-29 04:59:12.144 INFO  (coreCloseExecutor-20-thread-2) [   x:movieReview] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.movieReview, tag=7877a5bf
-2019-06-29 04:59:12.144 INFO  (coreCloseExecutor-20-thread-2) [   x:movieReview] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b828240: rootName = null, domain = solr.core.movieReview, service url = null, agent id = null] for registry solr.core.movieReview / com.codahale.metrics.MetricRegistry@41cb83d4
-2019-06-29 04:59:12.160 INFO  (coreCloseExecutor-20-thread-1) [   x:techproducts] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts, tag=72a84832
-2019-06-29 04:59:12.160 INFO  (coreCloseExecutor-20-thread-1) [   x:techproducts] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2348fe94: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts / com.codahale.metrics.MetricRegistry@30ded3f7
-2019-06-29 04:59:12.238 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-06-29 04:59:12.285 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@76a36b71: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@679b67b9
-2019-06-29 04:59:12.285 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-06-29 04:59:12.285 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@35fe2125: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@7dbb34ae
-2019-06-29 04:59:12.285 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-06-29 04:59:12.285 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@94f6bfb: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@2a2f3d13
-2019-06-29 04:59:12.365 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@649bec2e{/solr,null,UNAVAILABLE}{E:\Software\Solr\solr-8.1.1\server/solr-webapp/webapp}
+2019-06-29 15:26:42.326 INFO  (main) [   ] o.e.j.u.log Logging initialized @2842ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-06-29 15:26:42.762 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-06-29 15:26:42.776 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_181-b13
+2019-06-29 15:26:42.831 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/Aruna/Documents/Solr/server/contexts/] at interval 0
+2019-06-29 15:26:44.092 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-06-29 15:26:44.113 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-06-29 15:26:44.114 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-06-29 15:26:44.119 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2019-06-29 15:26:44.337 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-06-29 15:26:44.352 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.1.1
+2019-06-29 15:26:44.353 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-06-29 15:26:44.353 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\Aruna\Documents\Solr
+2019-06-29 15:26:44.356 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-06-29T15:26:44.355Z
+2019-06-29 15:26:44.399 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\Aruna\Documents\Solr\server\solr
+2019-06-29 15:26:44.411 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\Aruna\Documents\Solr\server\solr\solr.xml
+2019-06-29 15:26:44.551 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2019-06-29 15:26:45.078 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-06-29 15:26:45.740 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@5dd1c9f2[provider=null,keyStore=null,trustStore=null]
+2019-06-29 15:26:45.948 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@4b9df8a[provider=null,keyStore=null,trustStore=null]
+2019-06-29 15:26:46.397 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-06-29 15:26:46.401 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-06-29 15:26:46.555 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-29 15:26:46.555 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-29 15:26:46.566 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-06-29 15:26:46.682 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\Aruna\Documents\Solr\server\solr
+2019-06-29 15:26:46.684 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [movieReview]
+2019-06-29 15:26:46.940 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.SolrResourceLoader [movieReview] Added 63 libs to classloader, from paths: [/C:/Users/Aruna/Documents/Solr/contrib/clustering/lib, /C:/Users/Aruna/Documents/Solr/contrib/extraction/lib, /C:/Users/Aruna/Documents/Solr/contrib/langid/lib, /C:/Users/Aruna/Documents/Solr/contrib/velocity/lib, /C:/Users/Aruna/Documents/Solr/dist]
+2019-06-29 15:26:47.359 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
+2019-06-29 15:26:47.749 WARN  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2019-06-29 15:26:47.781 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@649bec2e{/solr,file:///C:/Users/Aruna/Documents/Solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\Aruna\Documents\Solr\server/solr-webapp/webapp}
+2019-06-29 15:26:47.810 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@740abb5{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-06-29 15:26:47.810 INFO  (main) [   ] o.e.j.s.Server Started @8329ms
+2019-06-29 15:26:47.854 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.IndexSchema [movieReview] Schema name=default-config
+2019-06-29 15:26:49.925 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [movieReview]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1259)
+org.apache.solr.common.SolrException: Unable to create core [movieReview]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1259) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:749) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.0.5.jar:4.0.5]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_181]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core movieReview: Can't load schema C:\Users\Aruna\Documents\Solr\server\solr\Bailscopelk\conf\managed-schema: 1
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema C:\Users\Aruna\Documents\Solr\server\solr\Bailscopelk\conf\managed-schema: 1
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:600) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.lucene.analysis.miscellaneous.StemmerOverrideFilterFactory.inform(StemmerOverrideFilterFactory.java:66) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.informResourceLoaderAwareObjectsInChain(ManagedIndexSchema.java:1315) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.informResourceLoaderAwareObjectsForFieldType(ManagedIndexSchema.java:1168) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.postReadInform(ManagedIndexSchema.java:1153) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:592) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+2019-06-29 15:26:51.466 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561822010722} status=0 QTime=55
+2019-06-29 15:26:51.630 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561822010723} status=0 QTime=218
+2019-06-29 15:26:51.777 INFO  (qtp1702940637-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561822010723} status=0 QTime=73
+2019-06-29 15:26:51.802 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=68
+2019-06-29 17:44:24.566 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@740abb5{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-06-29 17:44:24.584 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-06-29 17:44:24.784 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=428696898
+2019-06-29 17:44:24.865 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-06-29 17:44:24.877 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@53e211ee: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@2d4b471a
+2019-06-29 17:44:25.170 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-06-29 17:44:25.170 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@62679465: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@3494e1d3
+2019-06-29 17:44:25.175 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-06-29 17:44:25.175 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6a988392: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@42b0f810
+2019-06-29 17:44:25.712 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@649bec2e{/solr,null,UNAVAILABLE}{C:\Users\Aruna\Documents\Solr\server/solr-webapp/webapp}
