@@ -57,3 +57,7 @@
 කට
 දුන්
 දා
+read
+Read
+more
+More

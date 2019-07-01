@@ -1,0 +1,3 @@
+<delete><query>*:*</query></delete>
+
+<filter class="solr.EdgeNGramFilterFactory" minGramSize="3" maxGramSize="5"/>
