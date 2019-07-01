@@ -1,0 +1,102 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+සහ
+බව
+නව
+වෙත
+පසුව
+සඳහා
+මේ
+බව
+කළේ
+ද
+වෙත
+මහා
+තුළ
+මෙම
+අදාළ
+අතර
+වන 
+තුරු 
+එහි
+අදාළ
+කළ
+හි
+ක්
+ක්ද
+නිසා
+එහි
+කර
+සිට
+කින්
+ගත
+වූ
+සකස්
+ගෙන
+එහි
+බව
+ගත්
+බවයි
+කට
+දී
+ඒ
+වෙත
+කට
+දුන්
+දා
+<<<<<<< HEAD:server/solr/sinhalaNews/conf/lang/stopwords_si.txt
+read
+Read
+more
+More
+=======
+ලබා
+ගිය
+ලෙස
+තමා
+මේ
+මෙන්න
+එකක
+Read More
+වේවා
+ඔයාලා
+වගේ
+නිසයි
+වෙලා
+වුණු
+මේකේ
+තමයි
+විතර
+කල්
+වුන
+ඊට
+වන
+යම්
+දේ
+නේද
+නම්
+වලට
+ගැන
+කළත්
+
+
+
+
+
+
+
+
+>>>>>>> 0bbcbe217293d3112b5cbc441b0ce16429a2174e:server/solr/Bailscopelk/conf/lang/stopwords_si.txt

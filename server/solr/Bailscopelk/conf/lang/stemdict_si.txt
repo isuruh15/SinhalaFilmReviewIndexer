@@ -1,0 +1,3 @@
+# Set of overrides for the dutch stemmer
+# TODO: load this as a resource from the analyzer and sync it in build.xml
+තාත්තලගෙ තාත්තගෙ තාත්ත තාත්තල
