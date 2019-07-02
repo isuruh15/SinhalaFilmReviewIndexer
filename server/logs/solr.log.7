@@ -1,76 +1,359 @@
-2019-07-01 12:38:26.343 INFO  (main) [   ] o.e.j.u.log Logging initialized @3370ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-07-01 12:38:26.752 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-07-01 12:38:26.794 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_181-b13
-2019-07-01 12:38:26.830 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///F:/Solr/server/contexts/] at interval 0
-2019-07-01 12:38:27.838 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-07-01 12:38:27.879 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-07-01 12:38:27.880 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-07-01 12:38:27.896 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2019-07-01 12:38:28.246 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-07-01 12:38:28.266 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.1.1
-2019-07-01 12:38:28.266 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-07-01 12:38:28.266 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: F:\Solr
-2019-07-01 12:38:28.267 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-07-01T12:38:28.267Z
-2019-07-01 12:38:28.367 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: F:\Solr\server\solr
-2019-07-01 12:38:28.387 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from F:\Solr\server\solr\solr.xml
-2019-07-01 12:38:28.600 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
-2019-07-01 12:38:29.306 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-07-01 12:38:30.135 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@5dd1c9f2[provider=null,keyStore=null,trustStore=null]
-2019-07-01 12:38:30.404 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@4b9df8a[provider=null,keyStore=null,trustStore=null]
-2019-07-01 12:38:30.799 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-07-01 12:38:30.803 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-07-01 12:38:30.944 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-07-01 12:38:30.945 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-07-01 12:38:30.967 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-07-01 12:38:31.125 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath F:\Solr\server\solr
-2019-07-01 12:38:31.128 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [movieReview]
-2019-07-01 12:38:31.316 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.SolrResourceLoader [movieReview] Added 73 libs to classloader, from paths: [/F:/Solr/contrib/analysis-extras/lib, /F:/Solr/contrib/analysis-extras/lucene-libs, /F:/Solr/contrib/clustering/lib, /F:/Solr/contrib/extraction/lib, /F:/Solr/contrib/langid/lib, /F:/Solr/contrib/velocity/lib, /F:/Solr/dist]
-2019-07-01 12:38:31.784 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
-2019-07-01 12:38:32.271 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@649bec2e{/solr,file:///F:/Solr/server/solr-webapp/webapp/,AVAILABLE}{F:\Solr\server/solr-webapp/webapp}
-2019-07-01 12:38:32.343 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2755d705{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-07-01 12:38:32.344 INFO  (main) [   ] o.e.j.s.Server Started @9373ms
-2019-07-01 12:38:32.348 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.IndexSchema [movieReview] Schema name=default-config
-2019-07-01 12:38:34.452 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-07-01 12:38:34.559 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.CoreContainer Creating SolrCore 'movieReview' using configuration from instancedir F:\Solr\server\solr\Bailscopelk, trusted=true
-2019-07-01 12:38:34.668 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.movieReview' (registry 'solr.core.movieReview') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-07-01 12:38:34.759 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.SolrCore [[movieReview] ] Opening new SolrCore at [F:\Solr\server\solr\Bailscopelk], dataDir=[F:\Solr\server\solr\Bailscopelk\data\]
-2019-07-01 12:38:34.927 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-07-01 12:38:36.186 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-07-01 12:38:36.187 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-07-01 12:38:36.243 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-07-01 12:38:36.244 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-07-01 12:38:36.486 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=53
-2019-07-01 12:38:36.654 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.SolrIndexSearcher Opening [Searcher@21a83c1c[movieReview] main]
-2019-07-01 12:38:36.674 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: F:\Solr\server\solr\Bailscopelk\conf
-2019-07-01 12:38:36.718 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-07-01 12:38:36.730 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=spellcheck,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=1,maxQueryFrequency=0.01}
-2019-07-01 12:38:36.731 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.DirectSolrSpellChecker init: {name=sinhala,field=spellcheck,classname=solr.DirectSolrSpellChecker,spellcheckIndexDir=./spellchecker,buildOnCommit=true,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-07-01 12:38:36.732 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: sinhala
-2019-07-01 12:38:36.756 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-07-01 12:38:36.803 INFO  (searcherExecutor-10-thread-1-processing-x:movieReview) [   x:movieReview] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@21a83c1c[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_n(8.1.1):C1840:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663051}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_o(8.1.1):C639:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663465}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-07-01 12:38:36.803 INFO  (searcherExecutor-10-thread-1-processing-x:movieReview) [   x:movieReview] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-07-01 12:38:36.803 INFO  (searcherExecutor-10-thread-1-processing-x:movieReview) [   x:movieReview] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-07-01 12:38:36.803 INFO  (searcherExecutor-10-thread-1-processing-x:movieReview) [   x:movieReview] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: sinhala
-2019-07-01 12:38:36.815 INFO  (searcherExecutor-10-thread-1-processing-x:movieReview) [   x:movieReview] o.a.s.c.SolrCore [movieReview] Registered new searcher Searcher@21a83c1c[movieReview] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(8.1.1):C627:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783659637}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_l(8.1.1):C1188:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783660254}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_m(8.1.1):C1759:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783662237}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_n(8.1.1):C1840:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663051}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_o(8.1.1):C639:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_121, java.vm.version=25.121-b13, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_121-b13, source=flush, os.version=10.0, timestamp=1561783663465}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-07-01 12:38:45.222 INFO  (qtp1702940637-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561984724640} status=0 QTime=1
-2019-07-01 12:38:45.235 INFO  (qtp1702940637-21) [   x:movieReview] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2019-07-01 12:38:45.277 INFO  (qtp1702940637-20) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561984725194} status=0 QTime=52
-2019-07-01 12:38:45.357 INFO  (qtp1702940637-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561984724641} status=0 QTime=136
-2019-07-01 12:38:45.816 INFO  (qtp1702940637-21) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/analysis/field params={analysis.showmatch=true&verbose_output=0&analysis.query=??????&wt=json&_=1561984725194&analysis.fieldtype=text_si} status=0 QTime=581
-2019-07-01 12:38:59.135 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561984724640} status=0 QTime=0
-2019-07-01 12:38:59.158 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561984725194} status=0 QTime=3
-2019-07-01 12:38:59.204 INFO  (qtp1702940637-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561984724641} status=0 QTime=62
-2019-07-01 12:38:59.215 INFO  (qtp1702940637-19) [   x:movieReview] o.a.s.c.S.Request [movieReview]  webapp=/solr path=/analysis/field params={analysis.showmatch=true&verbose_output=0&analysis.query=good&wt=json&_=1561984725194&analysis.fieldtype=text_si} status=0 QTime=6
-2019-07-01 12:39:32.650 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@2755d705{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-07-01 12:39:32.650 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-07-01 12:39:32.655 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=428696898
-2019-07-01 12:39:32.662 INFO  (coreCloseExecutor-15-thread-1) [   x:movieReview] o.a.s.c.SolrCore [movieReview]  CLOSING SolrCore org.apache.solr.core.SolrCore@27660d0
-2019-07-01 12:39:32.663 INFO  (coreCloseExecutor-15-thread-1) [   x:movieReview] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.movieReview, tag=27660d0
-2019-07-01 12:39:32.664 INFO  (coreCloseExecutor-15-thread-1) [   x:movieReview] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@60a0b5d1: rootName = null, domain = solr.core.movieReview, service url = null, agent id = null] for registry solr.core.movieReview / com.codahale.metrics.MetricRegistry@654fa447
-2019-07-01 12:39:32.743 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-07-01 12:39:32.744 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@53e211ee: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@50a02c13
-2019-07-01 12:39:32.750 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-07-01 12:39:32.750 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@62679465: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@29befa75
-2019-07-01 12:39:32.756 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-07-01 12:39:32.756 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6a988392: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@2d6798f7
-2019-07-01 12:39:32.781 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@649bec2e{/solr,null,UNAVAILABLE}{F:\Solr\server/solr-webapp/webapp}
+2019-07-01 12:39:41.298 INFO  (main) [   ] o.e.j.u.log Logging initialized @2751ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-07-01 12:39:41.646 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-07-01 12:39:41.665 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_181-b13
+2019-07-01 12:39:41.748 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///F:/Solr/server/contexts/] at interval 0
+2019-07-01 12:39:42.812 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-07-01 12:39:42.831 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-07-01 12:39:42.832 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-07-01 12:39:42.837 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-07-01 12:39:43.034 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-07-01 12:39:43.045 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.1.1
+2019-07-01 12:39:43.046 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-07-01 12:39:43.046 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: F:\Solr
+2019-07-01 12:39:43.047 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-07-01T12:39:43.047Z
+2019-07-01 12:39:43.105 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: F:\Solr\server\solr
+2019-07-01 12:39:43.117 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from F:\Solr\server\solr\solr.xml
+2019-07-01 12:39:43.261 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2019-07-01 12:39:43.951 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-07-01 12:39:44.780 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@5dd1c9f2[provider=null,keyStore=null,trustStore=null]
+2019-07-01 12:39:45.017 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@4b9df8a[provider=null,keyStore=null,trustStore=null]
+2019-07-01 12:39:45.541 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-07-01 12:39:45.545 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-07-01 12:39:45.679 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-07-01 12:39:45.680 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-07-01 12:39:45.701 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-07-01 12:39:45.802 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath F:\Solr\server\solr
+2019-07-01 12:39:45.803 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [movieReview]
+2019-07-01 12:39:46.045 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.SolrResourceLoader [movieReview] Added 73 libs to classloader, from paths: [/F:/Solr/contrib/analysis-extras/lib, /F:/Solr/contrib/analysis-extras/lucene-libs, /F:/Solr/contrib/clustering/lib, /F:/Solr/contrib/extraction/lib, /F:/Solr/contrib/langid/lib, /F:/Solr/contrib/velocity/lib, /F:/Solr/dist]
+2019-07-01 12:39:46.541 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
+2019-07-01 12:39:47.128 INFO  (coreLoadExecutor-9-thread-1) [   x:movieReview] o.a.s.s.IndexSchema [movieReview] Schema name=default-config
+2019-07-01 12:39:47.268 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@649bec2e{/solr,file:///F:/Solr/server/solr-webapp/webapp/,AVAILABLE}{F:\Solr\server/solr-webapp/webapp}
+2019-07-01 12:39:47.298 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@740abb5{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-07-01 12:39:47.298 INFO  (main) [   ] o.e.j.s.Server Started @8753ms
+2019-07-01 12:39:48.816 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [movieReview]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1259)
+org.apache.solr.common.SolrException: Unable to create core [movieReview]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1259) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:749) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.0.5.jar:4.0.5]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_181]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core movieReview: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:596) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:488) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:357) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:488) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:656) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:340) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:333) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:357) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:488) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:638) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:340) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:333) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:357) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:488) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: Illegal ID en-si
+	at com.ibm.icu.text.TransliteratorIDParser.instantiateList(TransliteratorIDParser.java:439) ~[?:?]
+	at com.ibm.icu.text.Transliterator.getInstance(Transliterator.java:1356) ~[?:?]
+	at org.apache.lucene.analysis.icu.ICUTransformFilterFactory.<init>(ICUTransformFilterFactory.java:48) ~[?:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:638) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:340) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:333) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:357) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:488) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234) ~[?:?]
+	... 7 more
+2019-07-01 12:39:51.358 INFO  (qtp1702940637-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=244
+2019-07-01 12:39:57.599 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561984797391} status=0 QTime=1
+2019-07-01 12:39:57.617 ERROR (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'movieReview' is not available due to init failure: Could not load conf for core movieReview: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1730)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:486)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core movieReview: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:749)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:596)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:488)
+	... 16 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182)
+	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:357)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152)
+	... 17 more
+Caused by: org.apache.solr.common.SolrException: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:656)
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:340)
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:333)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:638)
+	... 24 more
+Caused by: java.lang.IllegalArgumentException: Illegal ID en-si
+	at com.ibm.icu.text.TransliteratorIDParser.instantiateList(TransliteratorIDParser.java:439)
+	at com.ibm.icu.text.Transliterator.getInstance(Transliterator.java:1356)
+	at org.apache.lucene.analysis.icu.ICUTransformFilterFactory.<init>(ICUTransformFilterFactory.java:48)
+	... 29 more
+
+2019-07-01 12:39:57.636 ERROR (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'movieReview' is not available due to init failure: Could not load conf for core movieReview: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1730)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:486)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:397)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core movieReview: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1287)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1234)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:749)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema F:\Solr\server\solr\Bailscopelk\conf\managed-schema: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:596)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "text_si": Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:488)
+	... 16 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] analyzer/filter: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182)
+	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:357)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152)
+	... 17 more
+Caused by: org.apache.solr.common.SolrException: Error instantiating class: 'org.apache.lucene.analysis.icu.ICUTransformFilterFactory'
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:656)
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:340)
+	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:333)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:638)
+	... 24 more
+Caused by: java.lang.IllegalArgumentException: Illegal ID en-si
+	at com.ibm.icu.text.TransliteratorIDParser.instantiateList(TransliteratorIDParser.java:439)
+	at com.ibm.icu.text.Transliterator.getInstance(Transliterator.java:1356)
+	at org.apache.lucene.analysis.icu.ICUTransformFilterFactory.<init>(ICUTransformFilterFactory.java:48)
+	... 29 more
+
+2019-07-01 12:39:57.655 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561984797391} status=0 QTime=49
+2019-07-01 12:40:10.435 INFO  (qtp1702940637-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561984810144} status=0 QTime=0
+2019-07-01 12:40:10.483 INFO  (qtp1702940637-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561984810145} status=0 QTime=43
+2019-07-01 12:40:10.559 INFO  (qtp1702940637-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561984810145} status=0 QTime=41
+2019-07-01 12:40:42.689 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@740abb5{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-07-01 12:40:42.689 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-07-01 12:40:42.694 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=428696898
+2019-07-01 12:40:42.700 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-07-01 12:40:42.702 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@53e211ee: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@1be5891a
+2019-07-01 12:40:42.714 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-07-01 12:40:42.714 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@62679465: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@60c43a0a
+2019-07-01 12:40:42.718 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-07-01 12:40:42.718 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6a988392: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@523215f
+2019-07-01 12:40:42.748 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@649bec2e{/solr,null,UNAVAILABLE}{F:\Solr\server/solr-webapp/webapp}

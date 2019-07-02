@@ -22,3 +22,4 @@ Fantacy,ෆැන්ටසි
 Casino,කැසිනෝ 
 Party,පාර්ටි 
 Admin,ඇඩ්මින්
+Series,සීරීස්

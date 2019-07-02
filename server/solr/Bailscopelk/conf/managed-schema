@@ -415,7 +415,10 @@
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="lang/stopwords_si.txt" ignoreCase="true"/>
 	  <filter class="solr.LowerCaseFilterFactory"/>
+	  <filter class="solr.NGramFilterFactory" minGramSize="3" maxGramSize="5"/>
 	  <filter class="solr.PatternReplaceFilterFactory" pattern="read" replacement="" replace="all"/>
+	  <filter class="solr.ReversedWildcardFilterFactory" withOriginal="true"
+               maxPosAsterisk="2" maxPosQuestion="1" minTrailing="2" maxFractionAsterisk="0"/>
     </analyzer>
     <analyzer type="query">
       <tokenizer class="solr.StandardTokenizerFactory"/>
@@ -423,12 +426,15 @@
       <!--filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms.txt"/-->
 	  <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="singlish.txt"/>
       <filter class="solr.LowerCaseFilterFactory"/>
+	  <filter class="solr.NGramFilterFactory" minGramSize="3" maxGramSize="5"/>
 	  <filter class="solr.PatternReplaceFilterFactory" pattern="subtitle" replacement="උපසිරැසි" replace="all"/>
+	  <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="singlish.txt"/>
 	  <filter class="solr.HunspellStemFilterFactory"
 		dictionary="si_SL.dic"
 		affix="si_SL.aff"
 		ignoreCase="true"
 		strictAffixParsing="true" />
+	  
     </analyzer>
   </fieldType>
   <fieldType name="text_sv" class="solr.TextField" positionIncrementGap="100">
