@@ -1,4 +1,10 @@
 SET UTF-8
 
-SFX M Y 1
-SFX M   0     's         .
+SFX	A	Y	1
+SFX	A	0	වා	.
+
+SFX	B	Y	1
+SFX	B 	0	යෙන්	.
+
+SFX	C	Y	1
+SFX	C 	0	ලගෙ	.
